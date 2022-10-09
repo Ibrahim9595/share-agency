@@ -1,0 +1,52 @@
+.card-container{
+   width: 25%;
+   height: 200px;
+    background-color: #e00885;
+    border-radius: 15px;
+    margin-inline: 30px;
+    margin-block-end: 45px;
+    box-shadow: 10px 10px 10px #e0e0e0;
+
+}
+.card-container .icon{
+    width: 70px;
+    height: 70px;
+    cursor: default;
+    margin-block-start: 15px;
+}
+
+.card-container .name{
+    background-color: transparent;
+    color: var(--main-BG);
+    font-size: large;
+    margin-inline: 15px;
+    margin-block-start: 5px;
+}
+
+.card-container .desc{
+    background: none;
+    color: var(--main-BG);
+    font-size: medium;
+    margin-block: 10px;
+    font-family: var(--ar-font);
+}
+
+@media only screen and (max-width: 1300px) {
+    .card-container{
+        width: 35%;
+    }
+    .card-container .name{
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .card-container{
+        width: 80%;
+    }
+
+    .card-container .name{
+        font-size: medium;
+    }
+
+}
