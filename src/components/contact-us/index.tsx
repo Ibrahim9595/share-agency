@@ -32,14 +32,14 @@ const Contact = () => {
                     {t("contact-text")}
                 </p>
             </div>
-            <form className="form-container" ref={form}>
+            <form className="form-container" onSubmit={sendEmail} ref={form}>
                 <div className="form-element">
                     <p className="form-label">{t("name-form")}</p>
-                    <input type="text" className="form-input" name="user_name"/>
+                    <input type="text" className="form-input" name="user_name" required/>
                 </div>
                 <div className="form-element">
                     <p className="form-label">{t("phone-form")}</p>
-                    <input type="tel" className="form-input" name="user_phone"/>
+                    <input type="tel" className="form-input" name="user_phone" required pattern="01[0-9]{9}"/>
                 </div>
 
                 <div className="form-element">
@@ -54,7 +54,7 @@ const Contact = () => {
                     <p className="form-label">{t("message")}</p>
                     <textarea className="form-input" name="message"/>
                 </div>
-                <button type={"submit"} className={lang ? "main-btn-ar" : "main-btn"} onClick={sendEmail}>{t("contact")}</button>
+                <button type={"submit"} className={lang ? "main-btn-ar" : "main-btn"}>{t("contact")}</button>
             </form>
         </div>
     )

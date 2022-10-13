@@ -4,13 +4,13 @@ import * as AiIcons from "react-icons/ai"
 
 export const SideMenuData= [
     {
-        title:'Home',
+        title:'home',
         path:'/',
         icon:<AiIcons.AiFillHome/>,
         cName:"nav-text"
     },
     {
-        title:'About us',
+        title:'about',
         path:'/about',
         icon:<AiIcons.AiFillInfoCircle/>,
         cName:"nav-text"
@@ -22,7 +22,7 @@ export const SideMenuData= [
         cName:"nav-text"
     },
     {
-        title:'our work',
+        title:'customers',
         path:'/work',
         icon:<FaIcons.FaBriefcase/>,
         cName:"nav-text"
