@@ -39,7 +39,7 @@ const Contact = () => {
                 </div>
                 <div className="form-element">
                     <p className="form-label">{t("phone-form")}</p>
-                    <input type="tel" className="form-input" name="user_phone" required pattern="01[0-9]{9}"/>
+                    <input type="tel" className="form-input" name="user_phone" required pattern="/^01[0-9]{9}$/"/>
                 </div>
 
                 <div className="form-element">
