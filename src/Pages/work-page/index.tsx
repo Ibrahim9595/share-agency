@@ -26,7 +26,7 @@ const WorkPage = () => {
         {t("customers")}
       </h3>
       <div className="work-cards">
-        {data?.data.companies.map((company, i) => (
+        {data?.data.companies.filter(cmp=>cmp.visible).map((company, i) => (
           <Card name={company.name} icon={company.logo} key={i} />
         ))}
       </div>
