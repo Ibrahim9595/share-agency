@@ -124,7 +124,7 @@
     margin-inline-end: 15px;
     cursor: pointer;
     display: none;
-    color: var(--main-BG);
+    color: var(--secondry-BG);
 }
 
 .nav-menu {
@@ -200,7 +200,7 @@
 
 @media only screen and (max-width: 1300px) {
     .logo-container {
-        width: 30%;
+        width: 70%;
     }
 
     .logo-container img {
