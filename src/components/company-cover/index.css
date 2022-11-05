@@ -19,7 +19,32 @@
     height: 200px;
     z-index: 1;
     background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
+
+.white-part .full-pattern{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.white-part .full-pattern .pattern{
+    width: 250px;
+    height: 70%;
+}
+
+.white-part .mobile-pattern{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
 .company-details{
     display: flex;
     flex-direction: column;
@@ -45,4 +70,15 @@
     padding: 10px;
     color: var(--main-BG);
 
+}
+
+@media only screen and (max-width:750) {
+    .white-part .mobile-pattern .pattern{
+        width: 150px;
+        height: 50%;
+        display: block;
+    }
+    .white-part .full-pattern{
+        display: none;
+    }
 }

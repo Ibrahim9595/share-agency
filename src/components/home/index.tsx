@@ -11,9 +11,8 @@ const Home = () =>{
 
     return(
         <div className= {lang ? "home-container-ar": "home-container" }>
-            <div className="video-container">
-                <iframe className="video"   src="https://www.youtube.com/embed/C6EZh4OlOH4" title="YouTube video player" frameBorder={0} allowFullScreen/>
-            </div>
+            <img src="./resources/images/home-cover.jpg" alt="home" className="home-cover"/>
+            <div className="overlay"></div>
             <div className="description-container">
                 <p className={lang?"description-ar":"description"}>
                     {t("home-text")}

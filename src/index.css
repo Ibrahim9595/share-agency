@@ -11,6 +11,11 @@
 }
 
 @font-face {
+  font-family: big-font;
+  src: url(../public/resources/fonts/blackpast-blackpast-400.ttf);
+}
+
+@font-face {
   font-family: ar-font;
   src: url(../public/resources/fonts/18\ Khebrat\ Musamim\ Regular.ttf);
 }
@@ -19,7 +24,7 @@
   --main-BG: #F0F0F0;
   --secondry-BG: #403092;
   --secondry-color: #e00885;
-  --main-text: #100F0F;
+  --main-text: #85868A;
   --en-font: 'nexa';
   --ar-font: 'ar-font';
 }
@@ -27,13 +32,13 @@
 
 .main-btn,.main-btn-ar{
   background: none;
-  background-color: var(--secondry-color);
-  border:2px solid var(--secondry-color);
-  color: var(--main-BG);
-  border-radius: 3px;
+  background-color: var(--main-BG);
+  color: var(--secondry-BG);
   cursor: pointer;
   font-family: var(--ar-font);
   text-decoration: none;
+  border: 1px solid var(--secondry-BG);
+
 }
 
 .main-btn{
@@ -42,8 +47,9 @@
 
 
 .main-btn:hover,.main-btn-ar:hover{
-  color: var(--secondry-color);
-  background-color: var(--main-BG);
+  color: var(--main-BG);
+  background-color: var(--secondry-BG);
+  border: 1px solid var(--secondry-BG);
 }
 
 

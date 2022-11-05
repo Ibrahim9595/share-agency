@@ -1,6 +1,7 @@
 import "./index.css"
 import React from "react"
 import { useTranslation } from "react-i18next"
+import {FaMapMarkedAlt} from "react-icons/fa"
 
 
 const Footer = () => {
@@ -12,7 +13,8 @@ const Footer = () => {
                 <div className="social-links">
                     <a href="https://www.facebook.com/shareadvertisingagency"><img src=".\resources\images\facebook.png" alt="link" className="link" /></a>
                     <a href="https://www.instagram.com/shareadvertising/"><img src=".\resources\images\instagram.png" alt="link" className="link" /></a>
-                    <a href="https://wa.me/+201069960013"><img src=".\resources\images\whatsapp.png" alt="link" className="link"/></a>  
+                    <a href="https://wa.me/+201069960013"><img src=".\resources\images\whatsapp.png" alt="link" className="link"/></a>
+                    <a href="https://goo.gl/maps/SqnxtgsZH4HpJuiS9"><FaMapMarkedAlt className="link"/></a>  
                 </div>
             </div>
             <h5 className="rights">{t("rights")}</h5>

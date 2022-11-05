@@ -20,7 +20,7 @@ const Nav = () => {
     return (
         <div className={lang ? "nav-main-ar" : "nav-main"}>
             <div className="logo-container">
-                <h2 className="logo-text">Share<span>Advertising</span></h2>
+                <h2 className="logo-text">Share-Advertising</h2>
                 <img src=".\resources\images\logo-share-2.png" alt="logo" />
             </div>
             <div className="list-container">

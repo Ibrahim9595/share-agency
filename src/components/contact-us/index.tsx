@@ -1,63 +1,78 @@
-import React, { useContext,useRef } from "react"
-import { useTranslation } from "react-i18next"
-import "./index.css"
-import { langContext } from "../../helper/context.js"
-import emailjs from '@emailjs/browser'
+import React, { useContext, useRef } from "react";
+import { useTranslation } from "react-i18next";
+import "./index.css";
+import { langContext } from "../../helper/context.js";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-    const { t } = useTranslation()
-    const { lang } = useContext(langContext)
-    const form = useRef()
+  const { t } = useTranslation();
+  const { lang } = useContext(langContext);
+  const form = useRef();
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-    
-        emailjs.sendForm('service_sylq939', 'template_cuv2jqr', form.current, '_wB3sFBKyWTuA1RCS')
-          .then((result) => {
-            console.log(result.text);
-            window.location.reload();
-          }, (error) => {
-              console.log(error.text);
-          });
-      };
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    return (
-        <div className={lang ? "contact-container-ar" : "contact-container"}>
-            <div className="text-container">
-                <div className="header">
-                    <h3 className="contact-header">{t("contact")}</h3>
-                    <h4 className="contact-sub-header">{t("contact-sub-head")}</h4>
-                </div>
-                <p className="contact-details">
-                    {t("contact-text")}
-                </p>
-            </div>
-            <form className="form-container" onSubmit={sendEmail} ref={form}>
-                <div className="form-element">
-                    <p className="form-label">{t("name-form")}</p>
-                    <input type="text" className="form-input" name="user_name" required/>
-                </div>
-                <div className="form-element">
-                    <p className="form-label">{t("phone-form")}</p>
-                    <input type="tel" className="form-input" name="user_phone" required pattern="/^01[0-9]{9}$/"/>
-                </div>
+    emailjs
+      .sendForm(
+        "service_sylq939",
+        "template_cuv2jqr",
+        form.current,
+        "_wB3sFBKyWTuA1RCS"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          window.location.reload();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
-                <div className="form-element">
-                    <p className="form-label">{t("company-name-form")}</p>
-                    <input type="text" className="form-input" name="company_name"/>
-                </div>
-                <div className="form-element">
-                    <p className="form-label">{t("company-field-form")}</p>
-                    <input type="text" className="form-input" name="company_field"/>
-                </div>
-                <div className="form-element">
-                    <p className="form-label">{t("message")}</p>
-                    <textarea className="form-input" name="message"/>
-                </div>
-                <button type={"submit"} className={lang ? "main-btn-ar" : "main-btn"}>{t("contact")}</button>
-            </form>
+  return (
+    <div className={lang ? "contact-container-ar" : "contact-container"}>
+      <div className="text-container">
+        <div className="header">
+          <h3 className="contact-header">{t("contact")}</h3>
+          <h4 className="contact-sub-header">{t("contact-sub-head")}</h4>
         </div>
-    )
-}
+        <p className="contact-details">{t("contact-text")}</p>
+      </div>
+      <form className="form-container" onSubmit={sendEmail} ref={form}>
+        <div className="form-element">
+          <p className="form-label">{t("name-form")}</p>
+          <input type="text" className="form-input" name="user_name" required />
+        </div>
+        <div className="form-element">
+          <p className="form-label">{t("phone-form")}</p>
+          <input
+            type="tel"
+            className="form-input"
+            name="user_phone"
+            required
+            pattern="/^01[0-9]{9}$/"
+          />
+        </div>
 
-export default Contact
+        <div className="form-element">
+          <p className="form-label">{t("company-name-form")}</p>
+          <input type="text" className="form-input" name="company_name" />
+        </div>
+        <div className="form-element">
+          <p className="form-label">{t("company-field-form")}</p>
+          <input type="text" className="form-input" name="company_field" />
+        </div>
+        <div className="form-element">
+          <p className="form-label">{t("message")}</p>
+          <textarea className="form-input" name="message" />
+        </div>
+        <button type={"submit"} className={lang ? "main-btn-ar" : "main-btn"}>
+          {t("contact")}
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default Contact;

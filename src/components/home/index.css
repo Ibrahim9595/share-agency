@@ -1,18 +1,18 @@
 .home-container{
-    display: flex;
-    margin-inline: 100px;
+    /* margin-inline: 100px; */
     margin-block-end: 55px;
     direction: ltr;
 }
 
 .home-container-ar{
-    display: flex;
-    margin-inline: 100px;
+    position: relative;
+    /* margin-inline: 100px; */
     margin-block-end: 55px;
+    overflow: hidden;
     direction: rtl;
 }
 
-.video-container{
+/* .video-container{
     width: 60%;
 }
 
@@ -20,20 +20,41 @@
     width: 100%;
     height: 500px;
     
+} */
+
+.home-cover{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #4f4f4f33;
 }
 .description-container{
     width: 40%;
+    position: absolute;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-inline-start: 35px;
+    top: 150px;
+    right: 30px;
+    width: 450px;   
 }
 
 .description-container .description,.description-container .description-ar{
     background: transparent;
-    font-size: x-large;
-    color: var(--secondry-color);
+    font-size: large;
+    color: var(--main-BG);
     line-height: 2.1;
     font-family: var(--ar-font);
     margin-block-end: 15px;
@@ -43,7 +64,7 @@
  .description-container .main-btn-ar{
     width: 30%;
     height: 25px;
-    font-size: large;
+    font-size: 1rem;
     font-family: var(--ar-font);
     padding: 5px;
 }
@@ -51,7 +72,7 @@
  .description-container .main-btn{
     width: 30%;
     height: 25px;
-    font-size: large;
+    font-size: 1rem;
     font-family: var(--en-font);
     padding: 5px;
 }

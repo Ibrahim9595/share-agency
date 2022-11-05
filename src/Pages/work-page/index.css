@@ -20,12 +20,19 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    
 }
 
 .work .card-container {
     background-color: #fefefe;
     height: 100%;
+    width:  20rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.work .customer{
+    text-decoration: none;
+    outline: none;
 }
 
 .work .card-container .name{
@@ -36,6 +43,7 @@
 .work .card-container .icon{
     width: 150px;
     height: 150px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width:750px) {

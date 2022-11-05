@@ -1,0 +1,19 @@
+.counter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline-end: 100px;
+    margin-block-end: 25px;
+    font-size: 1.7rem;
+    background-color: var(--secondry-color);
+    color: var(--main-BG);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    padding: 0.5rem;
+    box-shadow: 5px 5px 5px #d3cece;
+    font-weight: bold;
+}
+
+

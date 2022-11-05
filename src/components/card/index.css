@@ -1,7 +1,7 @@
 .card-container{
    width: 25%;
    height: 200px;
-    background-color: #e00885;
+    background-color: var(--secondry-BG);
     border-radius: 15px;
     margin-inline: 30px;
     margin-block-end: 45px;
