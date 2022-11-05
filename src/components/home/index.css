@@ -79,7 +79,7 @@
 
 @media only screen and (max-width:1300px) {
     .description-container .description,.description-container .description-ar{
-        font-size: medium;
+        font-size: 0.7rem;
 
     }
     .home-container,.home-container-ar{
@@ -89,6 +89,13 @@
     .description-container .main-btn-ar{
         font-size: small;
     }
+}
+
+.description-container .main-btn-ar,
+.description-container .main-btn{
+    font-size: 0.7rem;
+    width: 50px;
+    height: 15px;
 }
 
 @media only screen and (max-width:750px) {
@@ -102,9 +109,12 @@
         width: 100%;
     }
     .home-container .description-container,.home-container-ar .description-container{
-        width: 100%;
-        margin-inline-start: 0px;
-        margin-block-start: 15px;
+        
+        margin-inline-start: 10px;
+        margin-block-start: 0;
+        top:15px;
+        right: 0;
+        width: 250px;
     }
     .video-container .video{
         height: 100%;
