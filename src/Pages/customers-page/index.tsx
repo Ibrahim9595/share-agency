@@ -6,7 +6,7 @@ import "./index.css";
 import Loading from "../../components/loading/index.tsx";
 import { langContext } from "../../helper/context";
 import { useTranslation } from "react-i18next";
-const WorkPage = () => {
+const CustomersPage = () => {
   const { t } = useTranslation();
   const { lang } = useContext(langContext);
   const { isLoading, error, data } = useQuery("companies", () =>
@@ -34,4 +34,4 @@ const WorkPage = () => {
   );
 };
 
-export default WorkPage;
+export default CustomersPage;

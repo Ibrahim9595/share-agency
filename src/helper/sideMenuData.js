@@ -23,6 +23,12 @@ export const SideMenuData= [
     },
     {
         title:'customers',
+        path:'/customers',
+        icon:<FaIcons.FaUser/>,
+        cName:"nav-text"
+    },
+    {
+        title:'work',
         path:'/work',
         icon:<FaIcons.FaBriefcase/>,
         cName:"nav-text"

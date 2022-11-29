@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next"
 import Slider from "../slider/index.tsx"
 import './index.css'
 import {langContext} from "../../helper/context"
-const Work = () => {
+const Customers = () => {
     const {t} = useTranslation()
     const {lang} = useContext(langContext)
     return (
@@ -16,4 +16,4 @@ const Work = () => {
     )
 }
 
-export default Work
+export default Customers

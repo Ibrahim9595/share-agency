@@ -28,7 +28,8 @@ const Nav = () => {
                     <Link to="/" >{t("home")}</Link>
                     <Link to="/about">{t("about")}</Link>
                     <Link to="/services">{t("services")}</Link>
-                    <Link to="/work">{t("customers")}</Link>
+                    <Link to="/customers">{t("customers")}</Link>
+                    <Link to="/work">{t("work")}</Link>
                     <Link className="contact" to="/contact">{t("contact")}</Link>
                 </ul>
             </div>

@@ -1,0 +1,26 @@
+.work{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    margin-inline-start: 150px;
+    margin-block-end: 15px;
+}
+
+.work img{
+    width: 30%;
+    height: 30%;
+}
+
+@media only screen and (max-width: 750px) {
+    .work{
+        margin-inline-start: 50px;
+        flex-direction: column;
+    }
+    .work img{
+        width: 80%;
+        height: 80%;
+        
+    }
+}
